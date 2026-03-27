@@ -5,7 +5,7 @@
 ## 如何使用
 1. 打开 Shadowrocket -> 配置 -> 模块。
 2. 点击右上角的 `+`，选择「通过 URL 下载」。
-3. 填入本仓库 Raw 文件地址（例如 `https://raw.githubusercontent.com/<your-account>/my-shadowrocket-moudle/main/custom-rules.sgmodule`），即可订阅并保持自动更新。
+3. 填入本仓库 Raw 文件地址（例如 `https://raw.githubusercontent.com/1u0haonan/my-shadowrocket-moudle/refs/heads/github/custom-rules.sgmodule`），即可订阅并保持自动更新。
 
 ## 自定义规则指南
 `[Rule]` 区域支持 Shadowrocket/Surge 语法。每一行代表一条策略，格式为 `类型,匹配值,策略`。常用类型如下：
@@ -21,5 +21,3 @@ DOMAIN-SUFFIX,example.com,DIRECT
 DOMAIN,api.example.org,PROXY
 IP-CIDR,203.107.1.0/24,PROXY
 ```
-
-将新的规则追加在 `custom-rules.sgmodule` 的 `[Rule]` 段即可，按需调整策略即可。为了方便版本管理，建议每次修改后提交并推送到 GitHub，这样 Shadowrocket 就能通过同一个模块链接获得更新。
