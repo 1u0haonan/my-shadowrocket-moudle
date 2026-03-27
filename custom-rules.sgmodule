@@ -1,8 +1,12 @@
 #!name=Custom Shadowrocket Rules
 #!desc=Shadowrocket 模块，用于维护自定义直连/代理规则
-#!author=haonan
-#!version=2024.06.06
 
 [Rule]
+IP-CIDR,10.1.0.0/16,CTYUN
+IP-CIDR,10.3.0.0/16,CTYUN
+IP-CIDR,10.5.0.0/16,CTYUN
+IP-CIDR,10.96.0.0/11,CTYUN
+IP-CIDR,100.64.0.0/10,CTYUN
+IP-CIDR,100.100.0.30/32,CTYUN
 DOMAIN-SUFFIX,xtjzx.cn,DIRECT
 DOMAIN-SUFFIX,xtj.zone,DIRECT
